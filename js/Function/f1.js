@@ -1,4 +1,4 @@
-document.getElementById('head').innerText = "Function In js & fun Constructor"
+document.getElementById('head').innerText="Function In js & fun Constructor"
 console.log('console Testing.....');
 function add(v1, v2) {
     let add = v1 + v2;
@@ -10,9 +10,13 @@ console.log(fun);
 const myFuction = new Function('a', 'b', "return a+b");
 console.log(myFuction(3, 3))
 //Funtion Avoid Using new keyword
-const avoidNew = function (params) {
+const avoidNew=function(params) {
     console.log(`${params}`)
-    document.getElementById('avoid').innerHTML = `${params}`
-
+    document.getElementById('avoid').innerHTML=`${params}`
+    
 }
 console.log(avoidNew("You can be Avoid new key word in Function Constructor method..."))
+//Add Functionality when button fire
+let eve=document.querySelector('#event').addEventListener('click',function () {
+    alert('Event is fired');
+})
